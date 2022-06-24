@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap");
 * {
   font-family: 'Heebo', sans-serif;
-  background-color: white;
-  color: black;
+  background-color: #FFFFF0;
+  color: #28282B;
   padding: 0;
   margin: 0;
 }
@@ -18,7 +18,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #28282B;
 }
 
 .navbar img {
@@ -80,7 +80,7 @@
 .la_menu {
   width: 100%;
   max-width: 250px;
-  background: white;
+  background: #FFFFF0;
   height: 100vh;
   position: relative;
   -webkit-transition: all 500ms ease;
@@ -98,7 +98,7 @@
   display: block;
   text-decoration: none;
   padding: 20px;
-  color: black;
+  color: #28282B;
   border-left: 5px solid transparent;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
@@ -107,7 +107,7 @@
 .la_menu nav a:hover {
   border-left: 5px #c7c7c7;
   background: #067e3d;
-  color: white;
+  color: #FFFFF0;
 }
 
 .la_menu label {
@@ -133,7 +133,7 @@
   text-decoration: none;
   padding: 20px;
   font-size: 25px;
-  color: black;
+  color: #28282B;
 }
 
 main {
@@ -209,7 +209,7 @@ main {
 
 .footer a {
   text-decoration: none;
-  color: black;
+  color: #28282B;
   font-size: 20px;
 }
 

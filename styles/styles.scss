@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import "colors";
 *{
     font-family: 'Heebo', sans-serif;
-    background-color: white;
-    color: black;
+    background-color: $backgroundColor;
+    color: $fontColor;
     padding: 0;
     margin: 0;
 }
@@ -13,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px $borderColor;
     img{
         width: 40px;
         height: auto;
@@ -58,7 +59,7 @@
 .la_menu{
     width: 100%;
     max-width: 250px;
-    background: white;
+    background: $backgroundColor;
     height: 100vh;
     position: relative;
     transition: all 500ms ease;
@@ -69,13 +70,13 @@
             display: block;
             text-decoration: none;
             padding: 20px;
-            color: black;
+            color: $fontColor;
             border-left: 5px solid transparent;
             transition: all 400ms ease;
             &:hover{
-                border-left: 5px #c7c7c7;
-                background: #067e3d;
-                color: white;
+                border-left: 5px $hoverMenuBorderColor;
+                background: $hoverLinksColor;
+                color: $backgroundColor;
             } 
         }
     }
@@ -98,7 +99,7 @@
         text-decoration: none;
         padding: 20px;
         font-size: 25px;
-        color: black;
+        color: $fontColor;
     }
 }
 main{
@@ -162,7 +163,7 @@ main{
     border-top: solid 1px black;
     a{
         text-decoration: none;
-        color: black;
+        color: $fontColor;
         font-size: 20px;
     }
 }
