@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
 @import "colors";
+@import "sizes";
 *{
     font-family: 'Heebo', sans-serif;
     background-color: $backgroundColor;
@@ -16,8 +17,7 @@
     justify-content: space-between;
     border-bottom: solid 1px $borderColor;
     img{
-        width: 40px;
-        height: auto;
+        @include images(50px, auto);
     }
 }
 .btn_menu{
@@ -74,8 +74,8 @@
             border-left: 5px solid transparent;
             transition: all 400ms ease;
             &:hover{
-                border-left: 5px $hoverMenuBorderColor;
-                background: $hoverLinksColor;
+                border-left: 5px map-get($hover, borders);
+                background: map-get($hover, links);
                 color: $backgroundColor;
             } 
         }
@@ -112,8 +112,7 @@ main{
     img{
         margin-bottom: 20px;
         margin-top: 20px;
-        width: 100%;
-        height: 75%;
+        @include images(100%, 75%);
     }
     button{
         margin-bottom: 10px;
@@ -126,8 +125,7 @@ main{
     img{
         margin-bottom: 10px;
         margin-top: 10px;
-        width: 100%;
-        height: 70%;
+        @include images(100%, 70%);
     }
     button{
         margin-bottom: 10px;
@@ -179,14 +177,17 @@ main{
     flex-direction: row;
     justify-content: space-between;
 }
+@each $red, $color in $networks {
+    .#{$red}{
+        .fa-brands{
+            color: $color;
+        }
+    }
+}
 
 /* Contact page form config */
 
-.form_name,
-.form_last_name,
-.comments_field_tittle,
-.comments_field,
-.form_buttons {
+.form_name {
     margin: 3px;
     padding: 3px;
     display: flex;
@@ -199,6 +200,12 @@ main{
         padding: 3px;
         border-radius: 5px;
     }
+}
+.form_last_name,
+.comments_field_tittle,
+.comments_field,
+.form_buttons {
+    @extend .form_name;
 }
 
 /* Tutorials page config */

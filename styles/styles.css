@@ -22,8 +22,8 @@
 }
 
 .navbar img {
-  width: 40px;
   height: auto;
+  width: 50px;
 }
 
 .btn_menu {
@@ -144,8 +144,8 @@ main {
 .adds img {
   margin-bottom: 20px;
   margin-top: 20px;
-  width: 100%;
   height: 75%;
+  width: 100%;
 }
 
 .adds button {
@@ -156,8 +156,8 @@ main {
 .products img {
   margin-bottom: 10px;
   margin-top: 10px;
-  width: 100%;
   height: 70%;
+  width: 100%;
 }
 
 .products button {
@@ -241,9 +241,20 @@ main {
           justify-content: space-between;
 }
 
+.facebook .fa-brands {
+  color: #3b5998;
+}
+
+.twitter .fa-brands {
+  color: #00acee;
+}
+
+.instagram .fa-brands {
+  color: #E1306C;
+}
+
 /* Contact page form config */
-.form_name,
-.form_last_name,
+.form_name, .form_last_name,
 .comments_field_tittle,
 .comments_field,
 .form_buttons {
@@ -257,25 +268,21 @@ main {
           justify-content: center;
 }
 
-.form_name label,
+.form_name label, .form_last_name label, .comments_field_tittle label, .comments_field label, .form_buttons label,
 .form_name input,
-.form_name textarea,
-.form_name button,
-.form_last_name label,
 .form_last_name input,
-.form_last_name textarea,
-.form_last_name button,
-.comments_field_tittle label,
 .comments_field_tittle input,
-.comments_field_tittle textarea,
-.comments_field_tittle button,
-.comments_field label,
 .comments_field input,
-.comments_field textarea,
-.comments_field button,
-.form_buttons label,
 .form_buttons input,
+.form_name textarea,
+.form_last_name textarea,
+.comments_field_tittle textarea,
+.comments_field textarea,
 .form_buttons textarea,
+.form_name button,
+.form_last_name button,
+.comments_field_tittle button,
+.comments_field button,
 .form_buttons button {
   margin: 3px;
   padding: 3px;
