@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
-  font-family: 'Heebo', sans-serif;
-  background-color: #FFFFF0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
   color: #28282B;
   padding: 0;
   margin: 0;
@@ -18,12 +18,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: solid 1px #28282B;
+  border-bottom: solid 1px gray;
 }
 
 .navbar img {
   height: auto;
-  width: 50px;
+  width: 45px;
 }
 
 .btn_menu {
@@ -80,7 +80,7 @@
 .la_menu {
   width: 100%;
   max-width: 250px;
-  background: #FFFFF0;
+  background: white;
   height: 100vh;
   position: relative;
   -webkit-transition: all 500ms ease;
@@ -107,7 +107,7 @@
 .la_menu nav a:hover {
   border-left: 5px #c7c7c7;
   background: #067e3d;
-  color: #FFFFF0;
+  color: white;
 }
 
 .la_menu label {
@@ -116,24 +116,6 @@
   top: 10px;
   cursor: pointer;
   font-size: 18px;
-}
-
-/* Second nav*/
-.second_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  list-style: none;
-}
-
-.second_nav a {
-  text-decoration: none;
-  padding: 20px;
-  font-size: 25px;
-  color: #28282B;
 }
 
 main {
@@ -175,9 +157,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -192,19 +174,9 @@ main {
 
 /* Footer config */
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  align-items: center;
   margin: 5px;
   padding: 10px;
-  border-top: solid 1px black;
+  border-top: solid 1px gray;
 }
 
 .footer a {
@@ -214,7 +186,6 @@ main {
 }
 
 .footer_options {
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,13 +193,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footer_social_networks {
-  width: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,9 +206,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .facebook .fa-brands {
